@@ -1,0 +1,19 @@
+<div>
+		<div id="mainTitle">Stellaris Notepad</div>
+		
+		<div id="mainInputGrouper">
+			<input type="text" placeholder="Save Name" ng-model="userData.loadedSave"/>
+			<button ng-click="SaveToCookie() ">Save</button>
+			<button ng-click="DeleteCookie() ">Delete</button>
+			<select ng-model="selectedSave">
+				<option ng-repeat="save in saveList" value="{{save.Value}}">{{save.Key}}</option>
+			</select>
+			<button ng-click="LoadSave()">Load</button>
+			
+			{{ saveList }}
+			
+			
+			{{TestShow}}
+		</div>
+</div<
+

@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en" ng-app="StellarisNotepadApp">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Stellaris Notepad</title>
+		<link rel="stylesheet" href="/lib/css/ResetCSS.css"/>
+		<link rel="stylesheet" href="/lib/css/googleRoboto.css"> 
+		<link rel="stylesheet" href="/lib/css/googleOrbitron.css"> 
+		<link rel="stylesheet" href="/css/index.css"/>
+		<link rel="stylesheet" href="/css/terraforming.css"/>
+		<link rel="stylesheet" href="/css/main.css"/>
+	</head>
+	
+	<body ng-cloak>
+	
+		<div id="mainNavWrapper">
+			<ul>
+				<li><a href = "#/Main">Home</a></li>
+				<li><a><u>Tools</u></a>
+					<ul>
+						<li><a href = "#/TerraformingNotepad">Terraforming Notepad</a></li>
+					</ul>		
+				</li>
+				<li><a href = "#/About">About</a></li>
+			</ul>
+		</div>
+		
+		<ng-view>
+		</ng-view>
+			
+			
+		
+		<script src="/lib/angular/angular.js"></script>
+		<script src="/lib/angular/angular-route.min.js"></script>
+		<script src="/lib/angular/angular-cookies.min.js"></script>
+		<script src="/js/app.js"></script>
+		<script src="js/services/SaveDataPipeSvc.js"></script>
+		<script src="js/services/AutoSaveSvc.js"></script>
+		<script src="js/controllers/TerraformingNotepadController.js"></script>
+		<script src="js/filters/TerraformingActionFilter.js"></script>
+		<script src="js/controllers/MainController.js"></script>
+		<script src="js/controllers/AboutController.js"></script>
+	</body>
+
+</html>

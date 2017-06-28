@@ -1,0 +1,135 @@
+#terrafomingTable {
+	width: 90%;
+	margin: 20px auto;
+	
+}
+#terrafomingTable table, th, td {
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid #1D2824;
+}
+
+#terrafomingTable tr {
+	background-color: #B0BAB9;
+}
+
+#terrafomingTable th {
+	line-height:32px;
+	padding: 9px;
+	font-size: 20px;
+	font-family: 'Orbitron', sans-serif;
+	background-color: #344742;
+	color: #E6E8E6;
+}
+
+#terrafomingTable tr:nth-child(odd) {
+	background-color: #E6E8E6;
+}
+
+#terrafomingTable .terrafomingTablePlanetName:hover {
+	background-color: #63877D;
+}
+
+#terrafomingTable .terrafomingTablePlanetName:active {
+	background-color: #80F271;
+}
+
+
+#terrafomingTable td {
+	padding: 8px 10px 8px 10px;
+}
+
+#terrafomingTable .Idle{
+	background-color: #FFFF00;
+}
+
+#terrafomingTable .Done{
+	background-color: #008000;
+}
+
+#terrafomingTable .Terraforming{
+	background-color: #FF0000;
+}
+
+#terrafomingTable .Colonized{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+#terrafomingTable input, select {
+	width: 100%;
+}
+
+.tableButtonGrouper {
+	width: 100%;
+	text-align: center;
+}
+
+.terraformingTableButton {
+	border: none;
+	display: inline-block;
+	background-color: #344742;
+	width: 45%;
+	padding: 3px 8px 3px 8px;
+	margin: 0px 3px 0px 3px;
+	color: #E6E8E6;
+}
+
+.terraformingTableDoubleButton {
+	border: none;
+	display: inline-block;
+	background-color: #344742;
+	width: 95%;
+	padding: 3px 8px 3px 8px;
+	margin: 0px 3px 0px 3px;
+	color: #E6E8E6;
+}
+
+.terraformingTableButton:hover {
+	background-color: #1D2824;
+}
+
+.terraformingTableButton:active {
+	background-color: #63877D;
+}
+
+#terraformingControls {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+
+#terraformingControls {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+
+.checkBoxLabelPair {
+	display: inline-block;
+	border: 1px solid #1D2824;
+	margin: 2px;
+	padding: 2px;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	float: left;
+	width: 15.6%;
+	background-color: #B0BAB9;
+	height:25px;
+}
+
+.terraformTextBox {
+	float: left;
+}
+
+#filterTitle {
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #1D2824;
+	
+}

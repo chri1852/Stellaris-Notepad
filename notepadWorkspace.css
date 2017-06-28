@@ -1,0 +1,566 @@
+<NotepadPlus>
+    <Project name="Stellaris Notepad">
+        <Folder name="app">
+            <Folder name="css">
+                <File name="app\css\index.css" />
+                <File name="app\css\terraforming.css" />
+                <File name="app\css\main.css" />
+            </Folder>
+            <Folder name="data" />
+            <Folder name="img" />
+            <Folder name="js">
+                <Folder name="controllers">
+                    <File name="app\js\controllers\TerraformingNotepadController.js" />
+                    <File name="app\js\controllers\MainController.js" />
+                    <File name="app\js\controllers\AboutController.js" />
+                </Folder>
+                <File name="app\js\app.js" />
+                <Folder name="filters">
+                    <File name="app\js\filters\TerraformingActionFilter.js" />
+                </Folder>
+                <Folder name="services">
+                    <File name="app\js\services\SaveDataPipeSvc.js" />
+                    <File name="app\js\services\AutoSaveSvc.js" />
+                </Folder>
+            </Folder>
+            <Folder name="lib">
+                <Folder name="angular">
+                    <File name="app\lib\angular\angular-route.min.js" />
+                    <File name="app\lib\angular\angular.js" />
+                    <File name="app\lib\angular\angular.min.js" />
+                    <File name="app\lib\angular\angular-cookies.min.js" />
+                </Folder>
+                <Folder name="css">
+                    <File name="app\lib\css\ResetCSS.css" />
+                </Folder>
+            </Folder>
+            <Folder name="templates">
+                <File name="app\templates\About.html" />
+                <File name="app\templates\Main.html" />
+                <File name="app\templates\TerraformingNotepad.html" />
+            </Folder>
+            <File name="app\Index.html" />
+        </Folder>
+        <Folder name="node_modules">
+            <Folder name=".bin">
+                <File name="node_modules\.bin\mime" />
+                <File name="node_modules\.bin\mime.cmd" />
+            </Folder>
+            <Folder name="accepts">
+                <File name="node_modules\accepts\HISTORY.md" />
+                <File name="node_modules\accepts\index.js" />
+                <File name="node_modules\accepts\LICENSE" />
+                <File name="node_modules\accepts\package.json" />
+                <File name="node_modules\accepts\README.md" />
+            </Folder>
+            <Folder name="array-flatten">
+                <File name="node_modules\array-flatten\array-flatten.js" />
+                <File name="node_modules\array-flatten\LICENSE" />
+                <File name="node_modules\array-flatten\package.json" />
+                <File name="node_modules\array-flatten\README.md" />
+            </Folder>
+            <Folder name="body-parser">
+                <Folder name="lib">
+                    <Folder name="types">
+                        <File name="node_modules\body-parser\lib\types\json.js" />
+                        <File name="node_modules\body-parser\lib\types\raw.js" />
+                        <File name="node_modules\body-parser\lib\types\text.js" />
+                        <File name="node_modules\body-parser\lib\types\urlencoded.js" />
+                    </Folder>
+                    <File name="node_modules\body-parser\lib\read.js" />
+                </Folder>
+                <File name="node_modules\body-parser\HISTORY.md" />
+                <File name="node_modules\body-parser\index.js" />
+                <File name="node_modules\body-parser\LICENSE" />
+                <File name="node_modules\body-parser\package.json" />
+                <File name="node_modules\body-parser\README.md" />
+            </Folder>
+            <Folder name="bytes">
+                <File name="node_modules\bytes\History.md" />
+                <File name="node_modules\bytes\index.js" />
+                <File name="node_modules\bytes\package.json" />
+                <File name="node_modules\bytes\Readme.md" />
+            </Folder>
+            <Folder name="content-disposition">
+                <File name="node_modules\content-disposition\HISTORY.md" />
+                <File name="node_modules\content-disposition\index.js" />
+                <File name="node_modules\content-disposition\LICENSE" />
+                <File name="node_modules\content-disposition\package.json" />
+                <File name="node_modules\content-disposition\README.md" />
+            </Folder>
+            <Folder name="content-type">
+                <File name="node_modules\content-type\HISTORY.md" />
+                <File name="node_modules\content-type\index.js" />
+                <File name="node_modules\content-type\LICENSE" />
+                <File name="node_modules\content-type\package.json" />
+                <File name="node_modules\content-type\README.md" />
+            </Folder>
+            <Folder name="cookie">
+                <File name="node_modules\cookie\index.js" />
+                <File name="node_modules\cookie\LICENSE" />
+                <File name="node_modules\cookie\package.json" />
+                <File name="node_modules\cookie\README.md" />
+            </Folder>
+            <Folder name="cookie-signature">
+                <File name="node_modules\cookie-signature\.npmignore" />
+                <File name="node_modules\cookie-signature\History.md" />
+                <File name="node_modules\cookie-signature\index.js" />
+                <File name="node_modules\cookie-signature\package.json" />
+                <File name="node_modules\cookie-signature\Readme.md" />
+            </Folder>
+            <Folder name="debug">
+                <File name="node_modules\debug\.jshintrc" />
+                <File name="node_modules\debug\.npmignore" />
+                <File name="node_modules\debug\bower.json" />
+                <File name="node_modules\debug\browser.js" />
+                <File name="node_modules\debug\component.json" />
+                <File name="node_modules\debug\debug.js" />
+                <File name="node_modules\debug\History.md" />
+                <File name="node_modules\debug\Makefile" />
+                <File name="node_modules\debug\node.js" />
+                <File name="node_modules\debug\package.json" />
+                <File name="node_modules\debug\Readme.md" />
+            </Folder>
+            <Folder name="depd">
+                <Folder name="lib">
+                    <Folder name="compat">
+                        <File name="node_modules\depd\lib\compat\buffer-concat.js" />
+                        <File name="node_modules\depd\lib\compat\callsite-tostring.js" />
+                        <File name="node_modules\depd\lib\compat\index.js" />
+                    </Folder>
+                </Folder>
+                <File name="node_modules\depd\History.md" />
+                <File name="node_modules\depd\index.js" />
+                <File name="node_modules\depd\LICENSE" />
+                <File name="node_modules\depd\package.json" />
+                <File name="node_modules\depd\Readme.md" />
+            </Folder>
+            <Folder name="destroy">
+                <File name="node_modules\destroy\index.js" />
+                <File name="node_modules\destroy\package.json" />
+                <File name="node_modules\destroy\README.md" />
+            </Folder>
+            <Folder name="ee-first">
+                <File name="node_modules\ee-first\index.js" />
+                <File name="node_modules\ee-first\LICENSE" />
+                <File name="node_modules\ee-first\package.json" />
+                <File name="node_modules\ee-first\README.md" />
+            </Folder>
+            <Folder name="escape-html">
+                <File name="node_modules\escape-html\index.js" />
+                <File name="node_modules\escape-html\LICENSE" />
+                <File name="node_modules\escape-html\package.json" />
+                <File name="node_modules\escape-html\Readme.md" />
+            </Folder>
+            <Folder name="etag">
+                <File name="node_modules\etag\HISTORY.md" />
+                <File name="node_modules\etag\index.js" />
+                <File name="node_modules\etag\LICENSE" />
+                <File name="node_modules\etag\package.json" />
+                <File name="node_modules\etag\README.md" />
+            </Folder>
+            <Folder name="express">
+                <Folder name="lib">
+                    <Folder name="middleware">
+                        <File name="node_modules\express\lib\middleware\init.js" />
+                        <File name="node_modules\express\lib\middleware\query.js" />
+                    </Folder>
+                    <Folder name="router">
+                        <File name="node_modules\express\lib\router\index.js" />
+                        <File name="node_modules\express\lib\router\layer.js" />
+                        <File name="node_modules\express\lib\router\route.js" />
+                    </Folder>
+                    <File name="node_modules\express\lib\application.js" />
+                    <File name="node_modules\express\lib\express.js" />
+                    <File name="node_modules\express\lib\request.js" />
+                    <File name="node_modules\express\lib\response.js" />
+                    <File name="node_modules\express\lib\utils.js" />
+                    <File name="node_modules\express\lib\view.js" />
+                </Folder>
+                <File name="node_modules\express\History.md" />
+                <File name="node_modules\express\index.js" />
+                <File name="node_modules\express\LICENSE" />
+                <File name="node_modules\express\package.json" />
+                <File name="node_modules\express\Readme.md" />
+            </Folder>
+            <Folder name="finalhandler">
+                <File name="node_modules\finalhandler\HISTORY.md" />
+                <File name="node_modules\finalhandler\index.js" />
+                <File name="node_modules\finalhandler\LICENSE" />
+                <File name="node_modules\finalhandler\package.json" />
+                <File name="node_modules\finalhandler\README.md" />
+            </Folder>
+            <Folder name="forwarded">
+                <File name="node_modules\forwarded\HISTORY.md" />
+                <File name="node_modules\forwarded\index.js" />
+                <File name="node_modules\forwarded\LICENSE" />
+                <File name="node_modules\forwarded\package.json" />
+                <File name="node_modules\forwarded\README.md" />
+            </Folder>
+            <Folder name="fresh">
+                <File name="node_modules\fresh\HISTORY.md" />
+                <File name="node_modules\fresh\index.js" />
+                <File name="node_modules\fresh\LICENSE" />
+                <File name="node_modules\fresh\package.json" />
+                <File name="node_modules\fresh\README.md" />
+            </Folder>
+            <Folder name="http-errors">
+                <File name="node_modules\http-errors\HISTORY.md" />
+                <File name="node_modules\http-errors\index.js" />
+                <File name="node_modules\http-errors\LICENSE" />
+                <File name="node_modules\http-errors\package.json" />
+                <File name="node_modules\http-errors\README.md" />
+            </Folder>
+            <Folder name="iconv-lite">
+                <Folder name="encodings">
+                    <Folder name="tables">
+                        <File name="node_modules\iconv-lite\encodings\tables\big5-added.json" />
+                        <File name="node_modules\iconv-lite\encodings\tables\cp936.json" />
+                        <File name="node_modules\iconv-lite\encodings\tables\cp949.json" />
+                        <File name="node_modules\iconv-lite\encodings\tables\cp950.json" />
+                        <File name="node_modules\iconv-lite\encodings\tables\eucjp.json" />
+                        <File name="node_modules\iconv-lite\encodings\tables\gb18030-ranges.json" />
+                        <File name="node_modules\iconv-lite\encodings\tables\gbk-added.json" />
+                        <File name="node_modules\iconv-lite\encodings\tables\shiftjis.json" />
+                    </Folder>
+                    <File name="node_modules\iconv-lite\encodings\dbcs-codec.js" />
+                    <File name="node_modules\iconv-lite\encodings\dbcs-data.js" />
+                    <File name="node_modules\iconv-lite\encodings\index.js" />
+                    <File name="node_modules\iconv-lite\encodings\internal.js" />
+                    <File name="node_modules\iconv-lite\encodings\sbcs-codec.js" />
+                    <File name="node_modules\iconv-lite\encodings\sbcs-data-generated.js" />
+                    <File name="node_modules\iconv-lite\encodings\sbcs-data.js" />
+                    <File name="node_modules\iconv-lite\encodings\utf16.js" />
+                    <File name="node_modules\iconv-lite\encodings\utf7.js" />
+                </Folder>
+                <Folder name="lib">
+                    <File name="node_modules\iconv-lite\lib\bom-handling.js" />
+                    <File name="node_modules\iconv-lite\lib\extend-node.js" />
+                    <File name="node_modules\iconv-lite\lib\index.js" />
+                    <File name="node_modules\iconv-lite\lib\streams.js" />
+                </Folder>
+                <File name="node_modules\iconv-lite\.npmignore" />
+                <File name="node_modules\iconv-lite\.travis.yml" />
+                <File name="node_modules\iconv-lite\Changelog.md" />
+                <File name="node_modules\iconv-lite\LICENSE" />
+                <File name="node_modules\iconv-lite\package.json" />
+                <File name="node_modules\iconv-lite\README.md" />
+            </Folder>
+            <Folder name="inherits">
+                <File name="node_modules\inherits\inherits.js" />
+                <File name="node_modules\inherits\inherits_browser.js" />
+                <File name="node_modules\inherits\LICENSE" />
+                <File name="node_modules\inherits\package.json" />
+                <File name="node_modules\inherits\README.md" />
+                <File name="node_modules\inherits\test.js" />
+            </Folder>
+            <Folder name="ipaddr.js">
+                <Folder name="lib">
+                    <File name="node_modules\ipaddr.js\lib\ipaddr.js" />
+                </Folder>
+                <Folder name="src">
+                    <File name="node_modules\ipaddr.js\src\ipaddr.coffee" />
+                </Folder>
+                <Folder name="test">
+                    <File name="node_modules\ipaddr.js\test\ipaddr.test.coffee" />
+                </Folder>
+                <File name="node_modules\ipaddr.js\.npmignore" />
+                <File name="node_modules\ipaddr.js\.travis.yml" />
+                <File name="node_modules\ipaddr.js\bower.json" />
+                <File name="node_modules\ipaddr.js\Cakefile" />
+                <File name="node_modules\ipaddr.js\ipaddr.min.js" />
+                <File name="node_modules\ipaddr.js\LICENSE" />
+                <File name="node_modules\ipaddr.js\package.json" />
+                <File name="node_modules\ipaddr.js\README.md" />
+            </Folder>
+            <Folder name="media-typer">
+                <File name="node_modules\media-typer\HISTORY.md" />
+                <File name="node_modules\media-typer\index.js" />
+                <File name="node_modules\media-typer\LICENSE" />
+                <File name="node_modules\media-typer\package.json" />
+                <File name="node_modules\media-typer\README.md" />
+            </Folder>
+            <Folder name="merge-descriptors">
+                <File name="node_modules\merge-descriptors\index.js" />
+                <File name="node_modules\merge-descriptors\LICENSE" />
+                <File name="node_modules\merge-descriptors\package.json" />
+                <File name="node_modules\merge-descriptors\README.md" />
+            </Folder>
+            <Folder name="methods">
+                <File name="node_modules\methods\HISTORY.md" />
+                <File name="node_modules\methods\index.js" />
+                <File name="node_modules\methods\LICENSE" />
+                <File name="node_modules\methods\package.json" />
+                <File name="node_modules\methods\README.md" />
+            </Folder>
+            <Folder name="mime">
+                <Folder name="build">
+                    <File name="node_modules\mime\build\build.js" />
+                    <File name="node_modules\mime\build\test.js" />
+                </Folder>
+                <File name="node_modules\mime\.npmignore" />
+                <File name="node_modules\mime\cli.js" />
+                <File name="node_modules\mime\LICENSE" />
+                <File name="node_modules\mime\mime.js" />
+                <File name="node_modules\mime\package.json" />
+                <File name="node_modules\mime\README.md" />
+                <File name="node_modules\mime\types.json" />
+            </Folder>
+            <Folder name="mime-db">
+                <File name="node_modules\mime-db\db.json" />
+                <File name="node_modules\mime-db\HISTORY.md" />
+                <File name="node_modules\mime-db\index.js" />
+                <File name="node_modules\mime-db\LICENSE" />
+                <File name="node_modules\mime-db\package.json" />
+                <File name="node_modules\mime-db\README.md" />
+            </Folder>
+            <Folder name="mime-types">
+                <File name="node_modules\mime-types\HISTORY.md" />
+                <File name="node_modules\mime-types\index.js" />
+                <File name="node_modules\mime-types\LICENSE" />
+                <File name="node_modules\mime-types\package.json" />
+                <File name="node_modules\mime-types\README.md" />
+            </Folder>
+            <Folder name="ms">
+                <File name="node_modules\ms\.npmignore" />
+                <File name="node_modules\ms\History.md" />
+                <File name="node_modules\ms\index.js" />
+                <File name="node_modules\ms\LICENSE" />
+                <File name="node_modules\ms\package.json" />
+                <File name="node_modules\ms\README.md" />
+            </Folder>
+            <Folder name="negotiator">
+                <Folder name="lib">
+                    <File name="node_modules\negotiator\lib\charset.js" />
+                    <File name="node_modules\negotiator\lib\encoding.js" />
+                    <File name="node_modules\negotiator\lib\language.js" />
+                    <File name="node_modules\negotiator\lib\mediaType.js" />
+                </Folder>
+                <File name="node_modules\negotiator\HISTORY.md" />
+                <File name="node_modules\negotiator\index.js" />
+                <File name="node_modules\negotiator\LICENSE" />
+                <File name="node_modules\negotiator\package.json" />
+                <File name="node_modules\negotiator\README.md" />
+            </Folder>
+            <Folder name="on-finished">
+                <File name="node_modules\on-finished\HISTORY.md" />
+                <File name="node_modules\on-finished\index.js" />
+                <File name="node_modules\on-finished\LICENSE" />
+                <File name="node_modules\on-finished\package.json" />
+                <File name="node_modules\on-finished\README.md" />
+            </Folder>
+            <Folder name="parseurl">
+                <File name="node_modules\parseurl\HISTORY.md" />
+                <File name="node_modules\parseurl\index.js" />
+                <File name="node_modules\parseurl\LICENSE" />
+                <File name="node_modules\parseurl\package.json" />
+                <File name="node_modules\parseurl\README.md" />
+            </Folder>
+            <Folder name="path-to-regexp">
+                <File name="node_modules\path-to-regexp\History.md" />
+                <File name="node_modules\path-to-regexp\index.js" />
+                <File name="node_modules\path-to-regexp\LICENSE" />
+                <File name="node_modules\path-to-regexp\package.json" />
+                <File name="node_modules\path-to-regexp\Readme.md" />
+            </Folder>
+            <Folder name="proxy-addr">
+                <File name="node_modules\proxy-addr\HISTORY.md" />
+                <File name="node_modules\proxy-addr\index.js" />
+                <File name="node_modules\proxy-addr\LICENSE" />
+                <File name="node_modules\proxy-addr\package.json" />
+                <File name="node_modules\proxy-addr\README.md" />
+            </Folder>
+            <Folder name="qs">
+                <Folder name="lib">
+                    <File name="node_modules\qs\lib\index.js" />
+                    <File name="node_modules\qs\lib\parse.js" />
+                    <File name="node_modules\qs\lib\stringify.js" />
+                    <File name="node_modules\qs\lib\utils.js" />
+                </Folder>
+                <Folder name="test">
+                    <File name="node_modules\qs\test\parse.js" />
+                    <File name="node_modules\qs\test\stringify.js" />
+                </Folder>
+                <File name="node_modules\qs\.jshintignore" />
+                <File name="node_modules\qs\.jshintrc" />
+                <File name="node_modules\qs\.npmignore" />
+                <File name="node_modules\qs\.travis.yml" />
+                <File name="node_modules\qs\CHANGELOG.md" />
+                <File name="node_modules\qs\CONTRIBUTING.md" />
+                <File name="node_modules\qs\index.js" />
+                <File name="node_modules\qs\LICENSE" />
+                <File name="node_modules\qs\Makefile" />
+                <File name="node_modules\qs\package.json" />
+                <File name="node_modules\qs\README.md" />
+            </Folder>
+            <Folder name="range-parser">
+                <File name="node_modules\range-parser\HISTORY.md" />
+                <File name="node_modules\range-parser\index.js" />
+                <File name="node_modules\range-parser\LICENSE" />
+                <File name="node_modules\range-parser\package.json" />
+                <File name="node_modules\range-parser\README.md" />
+            </Folder>
+            <Folder name="raw-body">
+                <Folder name="node_modules">
+                    <Folder name="bytes">
+                        <File name="node_modules\raw-body\node_modules\bytes\History.md" />
+                        <File name="node_modules\raw-body\node_modules\bytes\index.js" />
+                        <File name="node_modules\raw-body\node_modules\bytes\LICENSE" />
+                        <File name="node_modules\raw-body\node_modules\bytes\package.json" />
+                        <File name="node_modules\raw-body\node_modules\bytes\Readme.md" />
+                    </Folder>
+                    <Folder name="iconv-lite">
+                        <Folder name="encodings">
+                            <Folder name="tables">
+                                <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\tables\big5-added.json" />
+                                <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\tables\cp936.json" />
+                                <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\tables\cp949.json" />
+                                <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\tables\cp950.json" />
+                                <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\tables\eucjp.json" />
+                                <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\tables\gb18030-ranges.json" />
+                                <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\tables\gbk-added.json" />
+                                <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\tables\shiftjis.json" />
+                            </Folder>
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\dbcs-codec.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\dbcs-data.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\index.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\internal.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\sbcs-codec.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\sbcs-data-generated.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\sbcs-data.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\utf16.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\encodings\utf7.js" />
+                        </Folder>
+                        <Folder name="lib">
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\lib\bom-handling.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\lib\extend-node.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\lib\index.js" />
+                            <File name="node_modules\raw-body\node_modules\iconv-lite\lib\streams.js" />
+                        </Folder>
+                        <File name="node_modules\raw-body\node_modules\iconv-lite\.npmignore" />
+                        <File name="node_modules\raw-body\node_modules\iconv-lite\.travis.yml" />
+                        <File name="node_modules\raw-body\node_modules\iconv-lite\Changelog.md" />
+                        <File name="node_modules\raw-body\node_modules\iconv-lite\LICENSE" />
+                        <File name="node_modules\raw-body\node_modules\iconv-lite\package.json" />
+                        <File name="node_modules\raw-body\node_modules\iconv-lite\README.md" />
+                    </Folder>
+                </Folder>
+                <File name="node_modules\raw-body\HISTORY.md" />
+                <File name="node_modules\raw-body\index.js" />
+                <File name="node_modules\raw-body\LICENSE" />
+                <File name="node_modules\raw-body\package.json" />
+                <File name="node_modules\raw-body\README.md" />
+            </Folder>
+            <Folder name="send">
+                <Folder name="node_modules">
+                    <Folder name="statuses">
+                        <File name="node_modules\send\node_modules\statuses\codes.json" />
+                        <File name="node_modules\send\node_modules\statuses\index.js" />
+                        <File name="node_modules\send\node_modules\statuses\LICENSE" />
+                        <File name="node_modules\send\node_modules\statuses\package.json" />
+                        <File name="node_modules\send\node_modules\statuses\README.md" />
+                    </Folder>
+                </Folder>
+                <File name="node_modules\send\HISTORY.md" />
+                <File name="node_modules\send\index.js" />
+                <File name="node_modules\send\LICENSE" />
+                <File name="node_modules\send\package.json" />
+                <File name="node_modules\send\README.md" />
+            </Folder>
+            <Folder name="serve-static">
+                <Folder name="node_modules">
+                    <Folder name="depd">
+                        <Folder name="lib">
+                            <Folder name="browser">
+                                <File name="node_modules\serve-static\node_modules\depd\lib\browser\index.js" />
+                            </Folder>
+                            <Folder name="compat">
+                                <File name="node_modules\serve-static\node_modules\depd\lib\compat\buffer-concat.js" />
+                                <File name="node_modules\serve-static\node_modules\depd\lib\compat\callsite-tostring.js" />
+                                <File name="node_modules\serve-static\node_modules\depd\lib\compat\event-listener-count.js" />
+                                <File name="node_modules\serve-static\node_modules\depd\lib\compat\index.js" />
+                            </Folder>
+                        </Folder>
+                        <File name="node_modules\serve-static\node_modules\depd\History.md" />
+                        <File name="node_modules\serve-static\node_modules\depd\index.js" />
+                        <File name="node_modules\serve-static\node_modules\depd\LICENSE" />
+                        <File name="node_modules\serve-static\node_modules\depd\package.json" />
+                        <File name="node_modules\serve-static\node_modules\depd\Readme.md" />
+                    </Folder>
+                    <Folder name="destroy">
+                        <File name="node_modules\serve-static\node_modules\destroy\index.js" />
+                        <File name="node_modules\serve-static\node_modules\destroy\LICENSE" />
+                        <File name="node_modules\serve-static\node_modules\destroy\package.json" />
+                        <File name="node_modules\serve-static\node_modules\destroy\README.md" />
+                    </Folder>
+                    <Folder name="escape-html">
+                        <File name="node_modules\serve-static\node_modules\escape-html\index.js" />
+                        <File name="node_modules\serve-static\node_modules\escape-html\LICENSE" />
+                        <File name="node_modules\serve-static\node_modules\escape-html\package.json" />
+                        <File name="node_modules\serve-static\node_modules\escape-html\Readme.md" />
+                    </Folder>
+                    <Folder name="send">
+                        <File name="node_modules\serve-static\node_modules\send\HISTORY.md" />
+                        <File name="node_modules\serve-static\node_modules\send\index.js" />
+                        <File name="node_modules\serve-static\node_modules\send\LICENSE" />
+                        <File name="node_modules\serve-static\node_modules\send\package.json" />
+                        <File name="node_modules\serve-static\node_modules\send\README.md" />
+                    </Folder>
+                    <Folder name="statuses">
+                        <File name="node_modules\serve-static\node_modules\statuses\codes.json" />
+                        <File name="node_modules\serve-static\node_modules\statuses\index.js" />
+                        <File name="node_modules\serve-static\node_modules\statuses\LICENSE" />
+                        <File name="node_modules\serve-static\node_modules\statuses\package.json" />
+                        <File name="node_modules\serve-static\node_modules\statuses\README.md" />
+                    </Folder>
+                </Folder>
+                <File name="node_modules\serve-static\HISTORY.md" />
+                <File name="node_modules\serve-static\index.js" />
+                <File name="node_modules\serve-static\LICENSE" />
+                <File name="node_modules\serve-static\package.json" />
+                <File name="node_modules\serve-static\README.md" />
+            </Folder>
+            <Folder name="statuses">
+                <File name="node_modules\statuses\codes.json" />
+                <File name="node_modules\statuses\HISTORY.md" />
+                <File name="node_modules\statuses\index.js" />
+                <File name="node_modules\statuses\LICENSE" />
+                <File name="node_modules\statuses\package.json" />
+                <File name="node_modules\statuses\README.md" />
+            </Folder>
+            <Folder name="type-is">
+                <File name="node_modules\type-is\HISTORY.md" />
+                <File name="node_modules\type-is\index.js" />
+                <File name="node_modules\type-is\LICENSE" />
+                <File name="node_modules\type-is\package.json" />
+                <File name="node_modules\type-is\README.md" />
+            </Folder>
+            <Folder name="unpipe">
+                <File name="node_modules\unpipe\HISTORY.md" />
+                <File name="node_modules\unpipe\index.js" />
+                <File name="node_modules\unpipe\LICENSE" />
+                <File name="node_modules\unpipe\package.json" />
+                <File name="node_modules\unpipe\README.md" />
+            </Folder>
+            <Folder name="utils-merge">
+                <File name="node_modules\utils-merge\.travis.yml" />
+                <File name="node_modules\utils-merge\index.js" />
+                <File name="node_modules\utils-merge\LICENSE" />
+                <File name="node_modules\utils-merge\package.json" />
+                <File name="node_modules\utils-merge\README.md" />
+            </Folder>
+            <Folder name="vary">
+                <File name="node_modules\vary\HISTORY.md" />
+                <File name="node_modules\vary\index.js" />
+                <File name="node_modules\vary\LICENSE" />
+                <File name="node_modules\vary\package.json" />
+                <File name="node_modules\vary\README.md" />
+            </Folder>
+        </Folder>
+        <Folder name="scripts">
+            <File name="scripts\web-server.js" />
+        </Folder>
+        <File name="package.json" />
+        <File name="server.bat" />
+    </Project>
+</NotepadPlus>

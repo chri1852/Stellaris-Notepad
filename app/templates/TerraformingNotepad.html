@@ -1,0 +1,102 @@
+<div>
+	
+	<div id="terraformingControls">
+		<div id="filterTitle">Filters</div>
+		<div class="checkBoxLabelPair">
+			<input type="checkbox" class="terraformTextBox" ng-model="userData.settings.filterSettings.IdleFilter" /><p>Idle</p>
+		</div>
+		<div class="checkBoxLabelPair">
+			<input type="checkbox" class="terraformTextBox" ng-model="userData.settings.filterSettings.TerraformingFilter" /><p>Terraforming</p>
+		</div>
+		<div class="checkBoxLabelPair">
+			<input type="checkbox" class="terraformTextBox" ng-model="userData.settings.filterSettings.DoneFilter" /><p>Done</p>
+		</div>
+		<div class="checkBoxLabelPair">
+			<input type="checkbox" class="terraformTextBox" ng-model="userData.settings.filterSettings.ColonizedFilter" /><p>Colonized</p>
+		</div>
+		<div class="checkBoxLabelPair">
+			<input type="text" ng-model="userData.settings.filterSettings.planetNameFilter" placeholder="Planet Name" />
+		</div>
+		<div class="checkBoxLabelPair">
+			<input type="text" ng-model="userData.settings.filterSettings.systemNameFilter" placeholder="System Name" />
+		</div>
+	</div>
+
+	
+	<table id="terrafomingTable">
+		<tr>
+			<th>Planet Name</th><th>System Name</th><th>Current Class</th><th>Goal Class</th><th>Action</th><th>Buttons</th>
+		</tr>
+		
+		<tr ng-repeat="entry in userData.terraformTableData | TerraformingActionFilter:userData.settings.filterSettings">
+			<td ng-hide="entry.isEditting" class="terrafomingTablePlanetName" ng-click="entry.isEditting=true">{{ entry.planetName }}</td>
+			<td ng-hide="entry.isEditting" >{{ entry.systemName }}</td>
+			<td ng-hide="entry.isEditting" >{{ GetPlanetClassByID(entry.currentClass) }}</td>
+			<td ng-hide="entry.isEditting" >{{ GetPlanetClassByID(entry.goalClass) }}</td>
+			<td ng-hide="entry.isEditting"  class="{{ GetActionClassByID(entry.status) }}">{{ (GetActionClassByID(entry.status) == "Terraforming") ? 'Terraforming to ' + GetPlanetClassByID(entry.nextClass) : GetActionClassByID(entry.status) }}</td>
+			<td ng-hide="entry.isEditting" >
+				<div class="tableButtonGrouper">
+					<button class="terraformingTableButton" ng-click="BackButtonAction(entry)">Back</button>
+					<button class="terraformingTableButton" ng-click="NextButtonAction(entry)">Next</button>
+				</div>
+			</td>
+			
+			<form name="editPlanet">
+				<td ng-show="entry.isEditting">
+					<input required ng-model="entry.planetName" type="text" />
+				</td>
+				<td ng-show="entry.isEditting">
+					<input required ng-model="entry.systemName"type="text" />
+				</td>
+				<td ng-show="entry.isEditting">
+					<select ng-model="entry.currentClass" ng-options="cIDs.ID as (cIDs.Class) for cIDs in Constants.planetClassIDs">
+						<option></option>
+					</select>
+				</td>
+				<td ng-show="entry.isEditting">
+					<select ng-model="entry.goalClass" ng-options="cIDs.ID as (cIDs.Class) for cIDs in Constants.planetClassIDs">
+						<option></option>
+					</select>
+				</td>
+				<td ng-show="entry.isEditting">
+					<select ng-model="entry.status" ng-options="cIDs.ID as (cIDs.Class) for cIDs in Constants.actionClassIDs">
+						<option></option>
+					</select>
+				</td>
+				<td ng-show="entry.isEditting">
+						<button class="terraformingTableDoubleButton" ng-click="SaveEdittedPlanet(entry)">Save</button>
+				</td>
+			</form>
+		</tr>
+			
+			<tr></tr>
+		
+		<tr>
+			<form name="newTerraformPlanet">
+				<td>
+					<input required ng-model="nPlanet.planetName" type="text" placeholder="Planet Name" />
+				</td>
+				<td>
+					<input required ng-model="nPlanet.systemName"type="text" placeholder="System Name" />
+				</td>
+				<td>
+					<select ng-model="nPlanet.currentClass" ng-options="cIDs.ID as (cIDs.Class) for cIDs in Constants.planetClassIDs">
+						<option></option>
+					</select>
+				</td>
+				<td>
+					<select ng-model="nPlanet.goalClass" ng-options="cIDs.ID as (cIDs.Class) for cIDs in Constants.planetClassIDs">
+						<option></option>
+					</select>
+				</td>
+				<td></td>
+				<td>
+					<div class="tableButtonGrouper">
+						<button type="submit" ng-click="AddPlanet(nPlanet, newTerraformPlanet)" class="terraformingTableButton">Save</button>
+						<button class="terraformingTableButton">Clear</button>
+					<div>
+				</td>
+			</form>
+		</tr>
+	</table>
+</div>
